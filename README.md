@@ -3,7 +3,7 @@ This is the code of pytorch version for our IROS2019 paper and another journal p
 
 
 ## Environment
-Tested on python3.6/3.7, pytorch 1.1.0, Ubuntu 16.04/18.04, opencv-python, sklearn, h5py, nibabel, et al.
+python3.6/3.7, pytorch 1.1.0, Ubuntu 16.04/18.04, opencv-python, sklearn, h5py, nibabel, et al.
 
 ## Dataset
 Siléane dataset is available at [here](http://rbregier.github.io/dataset2017).
