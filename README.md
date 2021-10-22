@@ -1,5 +1,5 @@
 ## PPR-Net++: Accurate 6D Pose Estimation in Stacked Scenarios
-This is the code of pytorch version for our IROS2019 paper and another journal paper: **PPR-Net: point-wise pose regression network for instance segmentation and 6d pose estimation in bin-picking scenarios; PPR-Net++: Accurate 6D Pose Estimation in Stacked Scenarios**.
+This is the code of pytorch version for our IROS2019 paper and TASE2021 journal paper: **PPR-Net: point-wise pose regression network for instance segmentation and 6d pose estimation in bin-picking scenarios; PPR-Net++: Accurate 6D Pose Estimation in Stacked Scenarios**.
 
 
 ## Environment
@@ -25,5 +25,13 @@ If you use this codebase in your research, please cite:
   pages={1773--1780},
   year={2019},
   organization={IEEE}
+}
+
+@article{zeng2021ppr,
+  title={PPR-Net++: Accurate 6-D Pose Estimation in Stacked Scenarios},
+  author={Zeng, Long and Lv, Wei Jie and Dong, Zhi Kai and Liu, Yong Jin},
+  journal={IEEE Transactions on Automation Science and Engineering},
+  year={2021},
+  publisher={IEEE}
 }
 ```
