@@ -7,6 +7,8 @@ Ubuntu 16.04/18.04
 
 python3.6, torch 1.1.0, torchvision 0.3.0, opencv-python, sklearn, h5py, nibabel, et al.
 
+Our backbone PointNet++ is borrowed from [pointnet2](https://github.com/yanx27/Pointnet_Pointnet2_pytorch).
+
 ## Dataset
 Siléane dataset is available at [here](http://rbregier.github.io/dataset2017).
 
