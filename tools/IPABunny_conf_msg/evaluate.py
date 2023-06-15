@@ -120,7 +120,8 @@ def eval_one_epoch(loader):
         pred_trans_val = pred_results[0][0].cpu().numpy()
         pred_mat_val = pred_results[1][0].cpu().numpy()
         pred_vis_val = pred_results[2][0].cpu().numpy()
-        pred_conf_val = pred_results[4][0].cpu().numpy()
+        pred_conf_val = torch.softmax(pred_results[4][0], dim=0)
+        pred_conf_val = pred_conf_val.cpu().numpy()
 
         picked_idx = pred_conf_val[:,1] > 0.5
         # picked_idx = pred_vis_val > 0.5
