@@ -30,9 +30,12 @@ If you use this codebase in your research, please cite:
 }
 
 @article{zeng2021ppr,
-  title={PPR-Net++: Accurate 6-D Pose Estimation in Stacked Scenarios},
+  title={PPR-Net++: accurate 6-D pose estimation in stacked scenarios},
   author={Zeng, Long and Lv, Wei Jie and Dong, Zhi Kai and Liu, Yong Jin},
   journal={IEEE Transactions on Automation Science and Engineering},
+  volume={19},
+  number={4},
+  pages={3139--3151},
   year={2021},
   publisher={IEEE}
 }
