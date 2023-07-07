@@ -96,7 +96,7 @@ DATASET_DIR = 'you-path/Fraunhofer_IPA_Bin-Picking_dataset/h5_dataset/bunnp/trai
 TEST_CYCLE_RANGE = [740,741]
 TEST_SCENE_RANGE = [1, 151]
 test_dataset = IPAPoseDataset(DATASET_DIR, TEST_CYCLE_RANGE, TEST_SCENE_RANGE, transforms=transforms)
-test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2)
+test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)
 print('Test dataset loaded, test point cloud size:', test_dataset.dataset['data'].shape)
 #-----------------------END-----------------------
 
@@ -120,10 +120,10 @@ def eval_one_epoch(loader):
         pred_trans_val = pred_results[0][0].cpu().numpy()
         pred_mat_val = pred_results[1][0].cpu().numpy()
         pred_vis_val = pred_results[2][0].cpu().numpy()
-        pred_conf_val = torch.softmax(pred_results[4][0], dim=0)
+        pred_conf_val = torch.softmax(pred_results[4][0], dim=1)
         pred_conf_val = pred_conf_val.cpu().numpy()
 
-        picked_idx = pred_conf_val[:,1] > 0.5
+        picked_idx = pred_conf_val[:,1] > 0.2
         # picked_idx = pred_vis_val > 0.5
         # picked_idx = np.bitwise_and(pred_vis_val > 0.4, pred_conf_val[:,1] > 0.5)
         # print(pred_conf_val.shape)
